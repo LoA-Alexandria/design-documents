@@ -26,17 +26,17 @@ Exactly one of the following.
 
 Site rank is master data stored for the member. A site admin assigns it. The first site admin is recorded on the site. A new sign-in with no stored rank becomes a Normal user. Site admin is above Editor, and Editor is above Normal user, in what the rank allows.
 
-The Discord role follows the stored rank once Discord is linked. Setting Editor or site admin gives the member the matching role on the community Discord server. Setting Normal user removes those staff roles. A username-and-password account has its rank before Discord is linked, and receives the Discord role at that link. The same direction applies to Premium: the Discord Premium role follows the entitlement. A role someone adds or removes on Discord leaves the stored rank as it is.
+The Discord role follows the stored rank once Discord is linked. Setting Editor or site admin gives the member the matching role on the community Discord server. Setting Normal user removes those staff roles. A username-and-password account has its rank before Discord is linked, and receives the Discord role at that link. The same direction applies to Premium: the Discord Premium role follows the entitlement. A role someone adds or removes on Discord leaves the stored rank as it is. See [Stored site rank is master](../decisions/0001-stored-rank-is-master.md) and [Discord role sync](../features/identity/discord-role-sync.md).
 
-Hiding a control is not permission. Every staff action is checked on the server against the stored rank.
+Hiding a control is not permission. Every staff action is checked on the server against the stored rank. See [Site rank](../features/identity/site-rank.md).
 
 ### Premium
 
 On or off, independent of site rank. Any Normal user, Editor, or Site admin may hold it.
 
-Active Premium unlocks tools marked Premium, allows the member to register one guild, and is what the Discord Premium role follows. It is a time-limited entitlement (or a lifetime grant), not a subscription that charges by itself.
+Active Premium unlocks tools marked Premium, allows the member to register one guild, and is what the Discord Premium role follows. It is a time-limited entitlement (or a lifetime grant), not a subscription that charges by itself. See [Entitlement](../features/premium/entitlement.md) and [Premium lock](../features/calculators/premium-lock.md).
 
-A guild registered by a member freezes when that member's Premium lapses. People can still read the guild. Writes stop, except that members can still leave and the registering member can still hand the guild on or take it down. A guild a site admin created, with no registering member, does not freeze. A site admin can still write in a frozen guild.
+A guild registered by a member freezes when that member's Premium lapses. People can still read the guild. Writes stop, except that members can still leave and the registering member can still hand the guild on or take it down. A guild a site admin created, with no registering member, does not freeze. A site admin can still write in a frozen guild. See [Registration](../features/guilds/registration.md).
 
 ### Early Supporter
 
@@ -44,7 +44,7 @@ A separate mark from Premium and from site rank. A site admin awards it to a mem
 
 The member may opt in to showing a chosen name and the award date on a public list. Anyone can read that list. It shows only the people who opted in.
 
-Once Discord is linked, the Early Supporter and Test Version Discord roles follow the mark. They stay if Premium later ends. They are removed if the award is revoked.
+Once Discord is linked, the Early Supporter and Test Version Discord roles follow the mark. They stay if Premium later ends. They are removed if the award is revoked. See [Early Supporter](../features/premium/early-supporter.md).
 
 ### Guild post
 
@@ -57,11 +57,11 @@ Separate from site rank and Premium. A person may have a different post in each 
 | Officer | A member who can review join requests, write guild news, run event plans, and use officer chat. |
 | Master | The person responsible for the guild. Can do what an officer can do, edit guild settings, promote officers, and hand the master post to someone else. The master cannot leave their own guild; they hand it on or the listing is removed. |
 
-A site admin can act in a guild the way its master can, including while the guild is frozen. That power comes from the site rank, not from a guild post.
+A site admin can act in a guild the way its master can, including while the guild is frozen. That power comes from the site rank, not from a guild post. See [Join and roster](../features/guilds/join-and-roster.md).
 
 ## What each user can start
 
-This is the map from person to job. The jobs themselves are in [jobs](jobs.md).
+This is the map from person to job. The jobs themselves are in [jobs](jobs.md), and each job links to its feature specs.
 
 | Job | Anonymous | Normal | Editor | Site admin | Also requires |
 | --- | --- | --- | --- | --- | --- |
