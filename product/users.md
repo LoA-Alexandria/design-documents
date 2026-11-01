@@ -71,7 +71,7 @@ This is the map from person to job. The jobs themselves are in [jobs](jobs.md), 
 | Use a Premium tool | no | if Premium | if Premium | if Premium | Active Premium |
 | Sign in | yes | — | — | — | Discord, or username and password |
 | See Benben | yes | yes | yes | yes | — |
-| Care for Benben | no | yes | yes | yes | Three actions per Benben per UTC day |
+| Care for Benben | no | yes | yes | yes | Three actions per UTC day |
 | Prepare content | no | no | yes | yes | — |
 | Publish content | no | no | if granted | yes | Publish permission |
 | Request to join a guild | no | yes | yes | yes | — |

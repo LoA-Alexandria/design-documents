@@ -14,7 +14,7 @@ One file per feature. All of them are draft. The folder is the domain, not the p
 | Prepare | 1 | [content/prepare.md](content/prepare.md) |
 | Publish | 1 | [content/publish.md](content/publish.md) |
 | Community pet | 1 | [benben/community-pet.md](benben/community-pet.md) |
-| Discord channel pet | 1 | [benben/discord-channel-pet.md](benben/discord-channel-pet.md) |
+| Benben on Discord | 1 | [benben/discord-channel-pet.md](benben/discord-channel-pet.md) |
 | Join and roster | 2 | [guilds/join-and-roster.md](guilds/join-and-roster.md) |
 | Member chat | 2 | [guilds/member-chat.md](guilds/member-chat.md) |
 | Officer chat | 2 | [guilds/officer-chat.md](guilds/officer-chat.md) |

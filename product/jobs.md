@@ -27,13 +27,12 @@ Referenced features:
 - [Prepare](../features/content/prepare.md) 
 - [Publish](../features/content/publish.md)
 
-
 ## Care for Benben
 
 Referenced features:
 
 - [Community pet](../features/benben/community-pet.md)
-- [Discord channel pet](../features/benben/discord-channel-pet.md)
+- [Benben on Discord](../features/benben/discord-channel-pet.md)
 
 ## Belong to a guild
 

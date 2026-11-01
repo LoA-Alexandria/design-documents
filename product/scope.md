@@ -4,6 +4,8 @@ Everything in [jobs](jobs.md) is part of the product. This file says what to bui
 
 Phase 1 is decided. Later phases are still a proposal. Guild registration stays behind Premium, because a member-registered guild freezes when Premium lapses and a member may only register one guild.
 
+The platform is Cloudflare Workers, D1, Durable Objects, and R2. See [Cloudflare platform](../decisions/0002-cloudflare-platform.md).
+
 ## Build order
 
 ### 1. Read, sign in, publish, Benben, and free calculators
@@ -13,7 +15,7 @@ Phase 1 is decided. Later phases are still a proposal. Guild registration stays 
 - Free calculators, each with its documented rules and tests. See [Free tools](../features/calculators/free-tools.md).
 - Editors prepare content. Editors with the publish permission, and site admins, publish it. See [Prepare](../features/content/prepare.md) and [Publish](../features/content/publish.md).
 - Site admins assign site rank. The matching Discord role follows once Discord is linked. See [Site rank](../features/identity/site-rank.md) and [Discord role sync](../features/identity/discord-role-sync.md).
-- Care for Benben: the shared community pet, and a separate pet for each Discord channel that opens one. See [Community pet](../features/benben/community-pet.md) and [Discord channel pet](../features/benben/discord-channel-pet.md).
+- Care for the one Benben. Discord opens that same pet. See [Community pet](../features/benben/community-pet.md) and [Benben on Discord](../features/benben/discord-channel-pet.md).
 
 This is the shell every later job assumes: a session, a rank, public content in a language URL, free calculators, and the communal pet.
 
