@@ -11,7 +11,7 @@ This is the free tier of one vendor. The paid step that lifts the daily caps is 
 | Component | Holds |
 | --- | --- |
 | Worker | Language pages, sign-in, the session, permission checks, publishing, Discord role updates, and the Benben status message in a channel. Calculator math stays in the browser. |
-| D1 | Accounts, site rank, drafts, published pieces, guilds, Premium, Early Supporter, and the asset catalog. The catalog is the name, kind, size, and storage key. The file itself is not a row. |
+| D1 | Accounts, site rank, drafts, published pieces, translations of existing interface strings, guilds, Premium, Early Supporter, and the asset catalog. The catalog is the name, kind, size, and storage key. The file itself is not a row. English interface strings ship inside the Worker. |
 | Durable Object | One for Benben. A later community pet or community game can have its own. Guild chat and alliance chat each have their own. Open screens hear changes from the object. The object hibernates when nobody is connected. |
 | R2 | Icons and images editors place in guides. A guide stores the catalog key, so one file used in many guides is stored once. Readers load the file from R2, not through the Worker. |
 

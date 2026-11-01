@@ -13,7 +13,8 @@ The platform is Cloudflare Workers, D1, Durable Objects, and R2. See [Cloudflare
 - Read news, guides, and event write-ups. Each of the five languages has its own URL. See [Published pieces](../features/reading/published-pieces.md) and [Language URLs](../features/reading/language-urls.md).
 - Sign in with Discord or with a username and password. The stored site rank is kept; a first sign-in is a Normal user. A password account can link Discord. See [Sign in](../features/identity/sign-in.md).
 - Free calculators, each with its documented rules and tests. See [Free tools](../features/calculators/free-tools.md).
-- Editors prepare content. Editors with the publish permission, and site admins, publish it. See [Prepare](../features/content/prepare.md) and [Publish](../features/content/publish.md).
+- Editors prepare the English of a piece. Members assigned a language translate it, and they translate interface strings. See [Prepare](../features/content/prepare.md), [Interface strings](../features/content/interface-strings.md), and [Two translation flows](../decisions/0003-two-translation-flows.md).
+- Editors with the publish permission, and site admins, publish. See [Publish](../features/content/publish.md).
 - Site admins assign site rank. The matching Discord role follows once Discord is linked. See [Site rank](../features/identity/site-rank.md) and [Discord role sync](../features/identity/discord-role-sync.md).
 - Care for the one Benben. Discord opens that same pet. See [Community pet](../features/benben/community-pet.md) and [Benben on Discord](../features/benben/discord-channel-pet.md).
 
@@ -53,10 +54,8 @@ On the current site, mapped Discord roles are the source of Editor and site admi
 These exist today. They are not jobs in this spec until the open questions below are closed.
 
 - Sharing a published piece into Discord as a formatted post.
-- Volunteer translation packs maintained outside the editor.
 
 ## Open decisions
 
 1. **Publish permission.** This spec uses one Editor rank, plus a permission to publish. The proof of concept uses two ranks (guide writer and manager). Confirm the single rank. See [Publish](../features/content/publish.md).
 2. **Discord share.** Keep posting a published piece into Discord, or treat that as part of the community Discord bot rather than the site. Benben's own Discord command is already in phase 1.
-3. **Event categories.** Should events use the same categories as the game? See [Published pieces](../features/reading/published-pieces.md).

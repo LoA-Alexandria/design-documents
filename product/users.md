@@ -12,7 +12,7 @@ They can read published news, guides, and event write-ups, choose a language, an
 
 ## Authenticated user
 
-A person with a session. Four attributes describe what they may do.
+A person with a session. These attributes describe what they may do. They combine.
 
 ### Site rank
 
@@ -20,15 +20,19 @@ Exactly one of the following.
 
 | Rank | Who they are |
 | --- | --- |
-| Normal user | A signed-in member with no staff duties. They use the site, join guilds, and chat. |
-| Editor | A staff member who prepares news, guides, and event write-ups. Publishing to the public site is a separate permission, not a different rank. In the proof of concept this is split: a guide writer may only prepare, and a manager may also publish. This spec keeps one Editor rank and treats "may publish" as a permission on that rank. |
-| Site admin | A staff member who can do everything an Editor can do, including publish, and who runs the site: assign site ranks, manage members, review Premium claims, grant or revoke Premium, and administer guilds. |
+| Normal user | A signed-in member with no staff duties besides optional translation. They use the site, join guilds, and chat. |
+| Editor | A staff member who prepares news, guides, and event write-ups. Publishing to the public site is a separate permission, not a different rank. This spec keeps one Editor rank and treats "may publish" as a permission on that rank. |
+| Site admin | A staff member who can do everything an Editor can do, including publish, and who runs the site: assign site ranks and translation languages, manage members, review Premium claims, grant or revoke Premium, and administer guilds. |
 
 Site rank is master data stored for the member. A site admin assigns it. The first site admin is recorded on the site. A new sign-in with no stored rank becomes a Normal user. Site admin is above Editor, and Editor is above Normal user, in what the rank allows.
 
 The Discord role follows the stored rank once Discord is linked. Setting Editor or site admin gives the member the matching role on the community Discord server. Setting Normal user removes those staff roles. A username-and-password account has its rank before Discord is linked, and receives the Discord role at that link. The same direction applies to Premium: the Discord Premium role follows the entitlement. A role someone adds or removes on Discord leaves the stored rank as it is. See [Stored site rank is master](../decisions/0001-stored-rank-is-master.md) and [Discord role sync](../features/identity/discord-role-sync.md).
 
 Hiding a control is not permission. Every staff action is checked on the server against the stored rank. See [Site rank](../features/identity/site-rank.md).
+
+### Translation languages
+
+Separate from site rank. A site admin assigns a member one or more of German, French, Russian, and Spanish. Several members may hold the same language. The assignment lets them translate interface strings and the text of news, guides, and event write-ups in those languages. It does not let them change the English, create a piece, or publish. See [Two translation flows](../decisions/0003-two-translation-flows.md).
 
 ### Premium
 
@@ -72,12 +76,13 @@ This is the map from person to job. The jobs themselves are in [jobs](jobs.md), 
 | Sign in | yes | — | — | — | Discord, or username and password |
 | See Benben | yes | yes | yes | yes | — |
 | Care for Benben | no | yes | yes | yes | Three actions per UTC day |
-| Prepare content | no | no | yes | yes | — |
+| Prepare the English of a piece | no | no | yes | yes | — |
+| Translate a language | no | if assigned | if assigned | yes | German, French, Russian, or Spanish |
 | Publish content | no | no | if granted | yes | Publish permission |
 | Request to join a guild | no | yes | yes | yes | — |
 | Review join requests, run plans, officer chat | no | if officer or master | if officer or master | yes | Guild post, or site admin |
 | Member chat and alliance member chat | no | if member | if member | yes | Accepted membership |
 | Register a guild | no | if Premium | if Premium | yes | Active Premium, except site admin |
 | Pay for Premium and submit a claim | no | yes | yes | yes | — |
-| Approve claims, grant Premium, award Early Supporter, assign site ranks | no | no | no | yes | Early Supporter also requires the member's active Premium |
+| Approve claims, grant Premium, award Early Supporter, assign site ranks and translation languages | no | no | no | yes | Early Supporter also requires the member's active Premium |
 | Opt in to the public Early Supporter list | no | if awarded | if awarded | if awarded | — |

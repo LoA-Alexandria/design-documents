@@ -12,6 +12,7 @@ One file per feature. All of them are draft. The folder is the domain, not the p
 | Site rank | 1 | [identity/site-rank.md](identity/site-rank.md) |
 | Discord role sync | 1 | [identity/discord-role-sync.md](identity/discord-role-sync.md) |
 | Prepare | 1 | [content/prepare.md](content/prepare.md) |
+| Interface strings | 1 | [content/interface-strings.md](content/interface-strings.md) |
 | Publish | 1 | [content/publish.md](content/publish.md) |
 | Community pet | 1 | [benben/community-pet.md](benben/community-pet.md) |
 | Benben on Discord | 1 | [benben/discord-channel-pet.md](benben/discord-channel-pet.md) |

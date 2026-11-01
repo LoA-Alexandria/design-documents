@@ -24,7 +24,8 @@ Referenced features:
 - [Sign in](../features/identity/sign-in.md)
 - [Site rank](../features/identity/site-rank.md)
 - [Discord role sync](../features/identity/discord-role-sync.md)
-- [Prepare](../features/content/prepare.md) 
+- [Prepare](../features/content/prepare.md)
+- [Interface strings](../features/content/interface-strings.md)
 - [Publish](../features/content/publish.md)
 
 ## Care for Benben
