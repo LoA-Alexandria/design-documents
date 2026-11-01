@@ -1,6 +1,6 @@
 # 0001 — Stored site rank is master
 
-Status: decided.
+Status: draft.
 
 On the proof of concept, mapped Discord roles are the source of Editor and site admin, and the highest mapped role wins. Here the stored site rank is master data. A site admin assigns it, and the Discord role follows.
 

@@ -42,15 +42,11 @@ Guilds in this phase are admin-created. Members do not register guilds yet, and 
 
 This phase depends on guild posts and officer chat from phase 2. Event alliances depend on the base marker from the siege and territory boards.
 
-## In the product, not sequenced above
+## Diff with the current solution
 
-Simulations are the same job as calculators. They stay in phase 3, free or Premium according to each simulation. Free calculators are already in phase 1. See [Free tools](../features/calculators/free-tools.md).
+On the current site, mapped Discord roles are the source of Editor and site admin, and the highest mapped role wins. Here the stored site rank is master data. A site admin assigns it, and the Discord role follows. Recorded in [Stored site rank is master](../decisions/0001-stored-rank-is-master.md).
 
-## Departures from the proof of concept
-
-On the proof of concept, mapped Discord roles are the source of Editor and site admin, and the highest mapped role wins. Here the stored site rank is master data. A site admin assigns it, and the Discord role follows. Recorded in [Stored site rank is master](../decisions/0001-stored-rank-is-master.md).
-
-## Present on the proof of concept, not yet adopted
+## Present on current site, not yet adopted in spec
 
 These exist today. They are not jobs in this spec until the open questions below are closed.
 
