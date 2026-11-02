@@ -4,7 +4,7 @@ Everything in [jobs](jobs.md) is part of the product. This file says what to bui
 
 Phase 1 is decided. Later phases are still a proposal. Guild registration stays behind Premium, because a member-registered guild freezes when Premium lapses and a member may only register one guild.
 
-The platform is Cloudflare Workers, D1, Durable Objects, and R2. See [Cloudflare platform](../decisions/0002-cloudflare-platform.md).
+The platform is Cloudflare Workers, D1, Durable Objects, and R2. See [Cloudflare platform](../decisions/0002-cloudflare-platform.md). Pages and actions use the Astro stack in [Astro app stack](../decisions/0004-astro-app-stack.md).
 
 ## Build order
 

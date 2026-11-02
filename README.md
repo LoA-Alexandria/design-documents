@@ -13,7 +13,7 @@ This spec describes the community site to build from scratch for Pop Epoch playe
 Below stuff is WIP. Take it with a grain of salt.
 
 4. [Features](features/README.md) — one spec per feature, grouped by the job it belongs to. Shared rules are stated once there and linked from the others.
-5. [Decisions](decisions/0002-cloudflare-platform.md) — choices that more than one feature depends on. The platform is [Cloudflare](decisions/0002-cloudflare-platform.md). Stored rank is [master data](decisions/0001-stored-rank-is-master.md). Translation is [two flows](decisions/0003-two-translation-flows.md).
+5. [Decisions](decisions/0002-cloudflare-platform.md) — choices that more than one feature depends on. The platform is [Cloudflare](decisions/0002-cloudflare-platform.md). The app stack is [Astro](decisions/0004-astro-app-stack.md). Stored rank is [master data](decisions/0001-stored-rank-is-master.md). Translation is [two flows](decisions/0003-two-translation-flows.md).
 6. [Glossary](product/glossary.md) — short definitions, each pointing at the spec that owns the term.
 
 A feature's folder is its domain, not its phase. Build order stays in [scope](product/scope.md).

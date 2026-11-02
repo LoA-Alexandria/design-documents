@@ -111,4 +111,4 @@ A reader’s browser requests the file from R2. Those reads count as Class B ope
 
 ## See also
 
-[Prepare](../features/content/prepare.md), [Publish](../features/content/publish.md), [Community pet](../features/benben/community-pet.md), [Benben on Discord](../features/benben/discord-channel-pet.md), [Member chat](../features/guilds/member-chat.md), [Sign in](../features/identity/sign-in.md).
+[Astro app stack](0004-astro-app-stack.md), [Prepare](../features/content/prepare.md), [Publish](../features/content/publish.md), [Community pet](../features/benben/community-pet.md), [Benben on Discord](../features/benben/discord-channel-pet.md), [Member chat](../features/guilds/member-chat.md), [Sign in](../features/identity/sign-in.md).
