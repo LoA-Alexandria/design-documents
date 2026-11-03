@@ -57,5 +57,4 @@ These exist today. They are not jobs in this spec until the open questions below
 
 ## Open decisions
 
-1. **Publish permission.** This spec uses one Editor rank, plus a permission to publish. The proof of concept uses two ranks (guide writer and manager). Confirm the single rank. See [Publish](../features/content/publish.md).
-2. **Discord share.** Keep posting a published piece into Discord, or treat that as part of the community Discord bot rather than the site. Benben's own Discord command is already in phase 1.
+1. **Discord share.** Keep posting a published piece into Discord, or treat that as part of the community Discord bot rather than the site. Benben's own Discord command is already in phase 1.

@@ -21,8 +21,8 @@ Exactly one of the following.
 | Rank | Who they are |
 | --- | --- |
 | Normal user | A signed-in member with no staff duties besides optional translation. They use the site, join guilds, and chat. |
-| Editor | A staff member who prepares news, guides, and event write-ups. Publishing to the public site is a separate permission, not a different rank. This spec keeps one Editor rank and treats "may publish" as a permission on that rank. |
-| Site admin | A staff member who can do everything an Editor can do, including publish, and who runs the site: assign site ranks and translation languages, manage members, review Premium claims, grant or revoke Premium, and administer guilds. |
+| Editor | A staff member who prepares news, guides, and event write-ups. Publishing to the public site is a separate permission on this rank, not a second rank. A site admin grants or revokes that permission. |
+| Site admin | A staff member who can do everything an Editor can do, including publish, and who runs the site: assign site ranks, publish permission, and translation languages, manage members, review Premium claims, grant or revoke Premium, and administer guilds. |
 
 Site rank is master data stored for the member. A site admin assigns it. The first site admin is recorded on the site. A new sign-in with no stored rank becomes a Normal user. Site admin is above Editor, and Editor is above Normal user, in what the rank allows.
 
@@ -84,5 +84,5 @@ This is the map from person to job. The jobs themselves are in [jobs](jobs.md), 
 | Member chat and alliance member chat | no | if member | if member | yes | Accepted membership |
 | Register a guild | no | if Premium | if Premium | yes | Active Premium, except site admin |
 | Pay for Premium and submit a claim | no | yes | yes | yes | — |
-| Approve claims, grant Premium, award Early Supporter, assign site ranks and translation languages | no | no | no | yes | Early Supporter also requires the member's active Premium |
+| Approve claims, grant Premium, award Early Supporter, assign site ranks, publish permission, and translation languages | no | no | no | yes | Early Supporter also requires the member's active Premium |
 | Opt in to the public Early Supporter list | no | if awarded | if awarded | if awarded | — |

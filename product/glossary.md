@@ -7,7 +7,7 @@ Short definitions. The linked spec owns the term; this page does not add rules.
 | Anonymous user | A person with no session. | [Users](users.md) |
 | Site rank | The one staff standing stored for a member: Normal user, Editor, or site admin. | [Users](users.md), [Site rank](../features/identity/site-rank.md) |
 | Translation language | A language a site admin assigns to a member: German, French, Russian, or Spanish. Several members may hold the same one. | [Two translation flows](../decisions/0003-two-translation-flows.md) |
-| Publish permission | A permission on the Editor rank. A site admin always has it. Whether Editor stays a single rank is still open. | [Publish](../features/content/publish.md) |
+| Publish permission | A permission on the Editor rank, not a separate rank. A site admin always has it and can grant or revoke it on an Editor. | [Publish](../features/content/publish.md) |
 | Premium | A time-limited entitlement, or a lifetime grant. It is not a subscription that charges by itself. | [Entitlement](../features/premium/entitlement.md) |
 | Premium lock | A Premium tool stays closed until the signed-in member has active Premium. | [Premium lock](../features/calculators/premium-lock.md) |
 | Early Supporter | A mark separate from Premium and from site rank. Twenty places, permanently used once assigned. | [Early Supporter](../features/premium/early-supporter.md) |
